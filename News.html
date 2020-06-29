@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+  <title>Warhammer Collection by Alex Carley</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" medial="all" href="css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="theheader">
+  <div class="container text-center">
+    <canvas id="myCanvas" width="480" height="100">
+    Your browser does not support the canvas element.
+    </canvas>
+    <script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.font = "40px Arial";
+    ctx.strokeText("My Warhammer collection.", 10, 50);
+    </script>
+    <img src="Images/40k-header.jpg" alt="Warhammer40k" width="100%" height="376">
+    <navigation>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Models.html">Models</a></li>
+        <li><a href="Armies.html">Amries</a></li>
+        <li><a class="active" href="News.html">News</a></li>
+        <li><a href="Stores.html">Stores</a></li>
+      </ul>
+    </navigation>
+  </div>
+</div>
+
+
+<div class="container-fluid sec-1 text-center">
+  <h2>News</h2>
+  <p>This is the page where I will post any new news concerning warhammer.</p>
+</div>
+
+<div class="Video-container sec-2 text-center">
+  <h2> Breaking news! Abbadon revealed. </h2>
+  <video width="640" height="480" controls>
+  <source src="Video/Abaddon the Despoiler Revealed.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+<div class="container-fluid sec-3 text-center">
+  <p>This website was created by Alex Carley</p>
+</div>
+
+</body>
+</html>

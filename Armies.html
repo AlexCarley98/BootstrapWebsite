@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<head>
+  <title>Warhammer Collection by Alex Carley</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" medial="all" href="css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("#flip1").click(function(){
+      $("#panel1").slideToggle("slow");
+    });
+  });
+  $(document).ready(function(){
+    $("#flip2").click(function(){
+      $("#panel2").slideToggle("slow");
+    });
+  });
+  $(document).ready(function(){
+    $("#flip3").click(function(){
+      $("#panel3").slideToggle("slow");
+    });
+  });
+  $(document).ready(function(){
+    $("#flip4").click(function(){
+      $("#panel4").slideToggle("slow");
+    });
+  });
+  $(document).ready(function(){
+    $("#flip5").click(function(){
+      $("#panel5").slideToggle("slow");
+    });
+  });
+  </script>
+</head>
+<body>
+<div class="theheader">
+  <div class="container text-center">
+    <canvas id="myCanvas" width="480" height="100">
+    Your browser does not support the canvas element.
+    </canvas>
+    <script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.font = "40px Arial";
+    ctx.strokeText("My Warhammer collection.", 10, 50);
+    </script>
+    <img src="Images/40k-header.jpg" alt="Warhammer40k" width="100%" height="100%">
+    <navigation>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Models.html">Models</a></li>
+        <li><a class="active" href="Armies.html">Amries</a></li>
+        <li><a href="News.html">News</a></li>
+        <li><a href="Stores.html">Stores</a></li>
+    </navigation>
+  </div>
+</div>
+
+<div class="container-fluid sec-1 text-center">
+  <h2>Armies</h2>
+  <p>Here is a bit of information on the backstory behind the armies I collect<br>
+  within the contexr of the setting. I have also provided a piece of art.<br>
+  this should help you a better understanding of what each army is.</p>
+</div>
+
+<div class="container-fluid sec-2 text-center">
+  <h2> Armies of Warhammer 40k </h2>
+  <div id="flip1">Alpha Legion</div>
+  <div id="panel1">
+    <div class="row">
+    <div class="col-sm-6">
+      The Alpha Legion was the XX Legion of the original twenty Space Marine Legions. They turned against the Emperor during the Horus Heresy, becoming Chaos Space Marines. Even before they turned to Chaos, the Alpha Legion were renowned as the most secretive of all the Legions. The Alpha Legion's most closely guarded secret, unbeknownst to all but a few outside the legion, is that they had two primarchs; Alpharius and his twin Omegon (sometimes referred to collectively as just 'Alpharius Omegon')
+    </div>
+    <div class="col-sm-6">
+      <img src="Images/AlphaLegion/ALArmy.jpg" alt="AlphaLegion" width="50%">
+    </div>
+    </div>
+</div>
+  <div id="flip2">Harlequins</div>
+  <div id="panel2">
+    <div class="row">
+    <div class="col-sm-6">
+      The Harlequins, or Rillietann, are a unique subset of the Eldar race, who split their time between being talented battlefield fighters and theatrical performers. They exist outside of normal Eldar society and hold no allegiance to any Craftworld, Kabal, or other form of authority other than to their own belief in the Eldar deity Cegorach, the Laughing God.
+    </div>
+    <div class="col-sm-6">
+      <img src="Images/Harlequins/HArmy.jpg" alt="Harlequins" width="50%">
+    </div>
+  </div>
+</div>
+  <div id="flip3">Eldar</div>
+  <div id="panel3">
+    <div class="row">
+    <div class="col-sm-6">
+      The Eldar or Aeldari (before their race fell[8]), known to themselves as the Asuryani (or followers of Asuryan)[7] are an ancient race of elf-like humanoids. Once they dominated the Galaxy but are currently a dying race. After the Fall of the Eldar they lost their main homeworlds and are currently scattered among the stars, inhabiting planetoid-sized starships known as Craftworlds.
+    </div>
+    <div class="col-sm-6">
+      <img src="Images/Eldar/EArmy.jpg" alt="Eldar" width="50%">
+    </div>
+  </div>
+</div>
+<h2> Armies of Warhammer Age of Sigmar </h2>
+<div id="flip4">Stormcast Eternals</div>
+<div id="panel4">
+  <div class="row">
+  <div class="col-sm-6">
+    Stormcast Eternals are Sigmar's immortal warriors clad in sigmarite armor - his "vengeance made manifest" - and his final gambit against the forces of Chaos. After five centuries of forging an immense army of magical beings, Sigmar has finally released them upon Mortal Realms. Their sole purpose is to liberate the realms from the ruinous clutches of Chaos and finally destroy the rulers of damnation
+  </div>
+  <div class="col-sm-6">
+    <img src="Images/Stormcast/SEArmy.jpg" alt="Stormcast" width="50%">
+  </div>
+</div>
+</div>
+<div id="flip5">Skaven</div>
+<div id="panel5">
+  <div class="row">
+  <div class="col-sm-6">
+    The Skaven are an insidious, malevolent race of humanoid rat-men and one of the most prolific. They follow an irregular cycle: they fight amongst themselves, expand their Under-Empire, multiply their population and surge to the surface to unleash sudden havoc. Eventually the Skaven weaken, often due to the violent treachery of the clans and skulk back to their lair. They are decay and entropy made manifest.
+  </div>
+  <div class="col-sm-6">
+    <img src="Images/SKArmy.jpg" alt="Skaven" width="50%">
+  </div>
+</div>
+</div>
+<div class="container-fluid sec-3 text-center">
+  <p>This website was created by Alex Carley</p>
+</div>
+
+</body>
+</html>
